@@ -9,9 +9,9 @@ public class Student
 	private String periodTwoGrade;
 	private String periodThree;
 	private String periodThreeGrade;
-	private int GPA;
+	private double GPA;
 	
-	public Student(String fn, String ln, String po, String pog, String pt, String ptg, String pth, String pthg, int gpa)
+	public Student(String fn, String ln, String po, String pog, String pt, String ptg, String pth, String pthg, double gpa)
 		{
 		firstName=fn;
 		lastName=ln;
@@ -105,14 +105,26 @@ public class Student
 		this.periodThreeGrade = periodThreeGrade;
 		}
 
-	public int getGPA()
+	public double getGPA()
 		{
 		return GPA;
 		}
 
-	public void setGPA(int gPA)
+	public void setGPA(double gPA)
 		{
 		GPA = gPA;
 		}
-	//igy8if
+
+
+	@Override
+	public String toString()
+		{
+		return "Student [firstName=" + firstName + ", lastName=" + lastName
+				+ ", periodOne=" + periodOne + ", periodOneGrade="
+				+ periodOneGrade + ", periodTwo=" + periodTwo
+				+ ", periodTwoGrade=" + periodTwoGrade + ", periodThree="
+				+ periodThree + ", periodThreeGrade=" + periodThreeGrade
+				+ ", GPA=" + GPA + "]";
+		}
+	
 	}
