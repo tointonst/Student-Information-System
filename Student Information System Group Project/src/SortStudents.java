@@ -35,10 +35,10 @@ public class SortStudents
 	}
 	public static void sortByGPA() 
 	{
-		
+		//sort by GPA
 	}
 	public static void sortByClass() 
 	{
-		
+		// sort by class 
 	}
 }
