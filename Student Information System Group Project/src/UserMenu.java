@@ -21,7 +21,7 @@ public class UserMenu
 		}
 		if(choseNumber == 3) 
 		{
-		  	
+		  	SortStudents.sortStudentsMenu();
 		}
 		else 
 		{
