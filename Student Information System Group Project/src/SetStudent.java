@@ -11,6 +11,6 @@ public class SetStudent {
 	{
 		DataOfStudent.studentInformation.remove(USERINPUT);
 	}
-	
+	//adfasd
 
 }

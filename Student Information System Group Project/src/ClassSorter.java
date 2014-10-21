@@ -7,5 +7,6 @@ public class ClassSorter implements Comparator<Student>
 		if (userChoice ==1 ) return s1.getPeriodOne().compareTo(s2.getPeriodOne());
 		else if (userChoice ==2) return s1.getPeriodTwo().compareTo(s2.getPeriodTwo());
 		else return s1.getPeriodThree().compareTo(s2.getPeriodThree());
+		//dfad
 		}
 	}
