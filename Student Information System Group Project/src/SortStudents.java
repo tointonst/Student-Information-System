@@ -35,7 +35,7 @@ public class SortStudents
 	}
 	public static void sortByGPA() 
 	{
-		//sort by GPA
+		Collections.sort(DataOfStudent.studentInformation, new GPASorter()); 
 	}
 	public static void sortByClass() 
 	{
