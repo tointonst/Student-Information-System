@@ -13,11 +13,11 @@ public class UserMenu
 		
 		if(choseNumber == 1) 
 		{
-			setStudent.setStudentMenu(); 
+			SetStudent.setStudentMenu(); 
 		}
 		if(choseNumber == 2)
 		{
-			changeGradesAndClasses.changeGrade(); 
+			ChangeGradesAndClasses.changeGrade(); 
 		}
 		if(choseNumber == 3) 
 		{

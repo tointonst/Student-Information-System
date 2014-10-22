@@ -29,8 +29,6 @@ public class DataOfStudent
 			periodThreeGrade=file.next();
 			studentInformation.add(new Student(firstName, lastName, periodOne, periodOneGrade, periodTwo, periodTwoGrade, periodThree, periodThreeGrade, 0.0));
 	    	}
-	    System.out.println(studentInformation);
 		}
-	//bob
 
 	}
