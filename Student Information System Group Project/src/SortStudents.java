@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class SortStudents
 	{
 	static int userPeriodSort;
+
 	public static void sortStudentsMenu()
 		{
 		System.out.println("Sort Students");
@@ -51,11 +52,31 @@ public class SortStudents
 		Scanner userInput = new Scanner(System.in);
 		userPeriodSort = userInput.nextInt();
 		
+		
 		Collections.sort(DataOfStudent.studentInformation, new ClassSorter());
-		for(int i=0; i<DataOfStudent.studentInformation.size(); i++)
+		int counter =0;
+		for (int i = 0; i < DataOfStudent.studentInformation.size(); i++)
 			{
-		    System.out.println(DataOfStudent.studentInformation.get(i).getFirstName() + " " + DataOfStudent.studentInformation.get(i).getLastName()  + "\t" + DataOfStudent.studentInformation.get(i).getPeriodOne() + " " + DataOfStudent.studentInformation.get(i).getPeriodOneGrade() +"\t" + DataOfStudent.studentInformation.get(i).getPeriodTwo() + " " + DataOfStudent.studentInformation.get(i).getPeriodTwoGrade() +"\t" + DataOfStudent.studentInformation.get(i).getPeriodThree() + " " + DataOfStudent.studentInformation.get(i).getPeriodThreeGrade());
-		    } 
+			System.out.println(counter +") \t" + DataOfStudent.studentInformation.get(i)
+					.getFirstName()
+					+ " "
+					+ DataOfStudent.studentInformation.get(i).getLastName()
+					+ "\t"
+					+ DataOfStudent.studentInformation.get(i).getPeriodOne()
+					+ " "
+					+ DataOfStudent.studentInformation.get(i)
+							.getPeriodOneGrade()
+					+ "\t"
+					+ DataOfStudent.studentInformation.get(i).getPeriodTwo()
+					+ " "
+					+ DataOfStudent.studentInformation.get(i)
+							.getPeriodTwoGrade()
+					+ "\t"
+					+ DataOfStudent.studentInformation.get(i).getPeriodThree()
+					+ " "
+					+ DataOfStudent.studentInformation.get(i)
+							.getPeriodThreeGrade());
+			}
 		}
-	//asdfasdf
-}
+	// asdfasdf
+	}
