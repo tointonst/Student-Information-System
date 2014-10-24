@@ -29,7 +29,7 @@ public class SortStudents
 			} 
 		else
 			{
-			System.out.println("Please input an accepted character ex 1,2 or 3. ");
+			System.out.println(" ");
 			}
 		}
 
@@ -43,30 +43,33 @@ public class SortStudents
 		CalculateGPA.GPA(); 
 		Collections.sort(DataOfStudent.studentInformation, new GPASorter());
 		
-			for(int i = 0; i < DataOfStudent.studentInformation.size(); i++) 
+		int counter =0;
+		for (int i = 0; i < DataOfStudent.studentInformation.size(); i++)
 			{
-				System.out.println("\n" + "Here are the classes and scores of "
-						+ DataOfStudent.studentInformation.get(i).getFirstName()
-						+ " "
-						+ DataOfStudent.studentInformation.get(i).getLastName() + ".");
-				System.out.println("\n"
-						+ DataOfStudent.studentInformation.get(i).getPeriodOne()
-						+ " "
-						+ DataOfStudent.studentInformation.get(i)
-								.getPeriodOneGrade()
-						+ " "
-						+ DataOfStudent.studentInformation.get(i).getPeriodTwo()
-						+ " "
-						+ DataOfStudent.studentInformation.get(i)
-								.getPeriodTwoGrade()
-						+ " "
-						+ DataOfStudent.studentInformation.get(i)
-								.getPeriodThree()
-						+ " "
-						+ DataOfStudent.studentInformation.get(i)
-								.getPeriodThreeGrade()
-						+ " " + DataOfStudent.studentInformation.get(i)
-								.getGPA()); 
+			counter++; 
+			System.out.println(counter +") \t" + DataOfStudent.studentInformation.get(i)
+					.getFirstName()
+					+ " "
+					+ DataOfStudent.studentInformation.get(i).getLastName()
+					+ "\t"
+					+ DataOfStudent.studentInformation.get(i).getPeriodOne()
+					+ " "
+					+ DataOfStudent.studentInformation.get(i)
+							.getPeriodOneGrade()
+					+ "\t"
+					+ DataOfStudent.studentInformation.get(i).getPeriodTwo()
+					+ " "
+					+ DataOfStudent.studentInformation.get(i)
+							.getPeriodTwoGrade()
+					+ "\t"
+					+ DataOfStudent.studentInformation.get(i).getPeriodThree()
+					+ " "
+					+ DataOfStudent.studentInformation.get(i)
+							.getPeriodThreeGrade()
+					+"\t GPA: "
+					+ DataOfStudent.studentInformation.get(i)
+							.getGPA()); 
+					
 			}
 		}
 
@@ -84,6 +87,7 @@ public class SortStudents
 		int counter =0;
 		for (int i = 0; i < DataOfStudent.studentInformation.size(); i++)
 			{
+			counter++; 
 			System.out.println(counter +") \t" + DataOfStudent.studentInformation.get(i)
 					.getFirstName()
 					+ " "
