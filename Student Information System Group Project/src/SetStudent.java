@@ -91,9 +91,30 @@ public class SetStudent {
 			
 	public static void addStudent()
 		{
-		System.out.println("What is ");
+		System.out.println("What is the first name of the student?");
 		Scanner userInput = new Scanner(System.in);
-		userAddOrDelete = userInput.nextInt();
+		String firstName = userInput.next();
+		System.out.println("what is the last name of the student?");
+		Scanner userInput2 = new Scanner(System.in);
+		String lastName = userInput2.next();
+		System.out.println("What class is his first peroid?");
+		Scanner userInput3 = new Scanner(System.in);
+		String periodOne= userInput3.next();
+		System.out.println("What grade does the student have in " + periodOne + "?");
+		Scanner userInput4 = new Scanner(System.in);
+		String periodOneGrade = userInput4.next();
+		System.out.println("What class is his second peroid?");
+		Scanner userInput5 = new Scanner(System.in);
+		String periodTwo= userInput5.next();
+		System.out.println("What grade does the student have in " + periodTwo + "?");
+		Scanner userInput6 = new Scanner(System.in);
+		String periodTwoGrade = userInput6.next();
+		System.out.println("What class is his third peroid?");
+		Scanner userInput7 = new Scanner(System.in);
+		String periodThree = userInput7.next();
+		System.out.println("What grade does the student have in " + periodThree + "?");
+		Scanner userInput8 = new Scanner(System.in);
+		String periodThreeGrade = userInput8.next();
 		DataOfStudent.studentInformation.add(new Student(firstName, lastName, periodOne, periodOneGrade, periodTwo, periodTwoGrade, periodThree, periodThreeGrade, 0.0));
 		}
 
