@@ -97,25 +97,47 @@ public class SetStudent {
 		System.out.println("what is the last name of the student?");
 		Scanner userInput2 = new Scanner(System.in);
 		String lastName = userInput2.next();
-		System.out.println("What class is his first peroid?");
+		System.out.println("What class is the students first peroid?");
 		Scanner userInput3 = new Scanner(System.in);
 		String periodOne= userInput3.next();
 		System.out.println("What grade does the student have in " + periodOne + "?");
 		Scanner userInput4 = new Scanner(System.in);
 		String periodOneGrade = userInput4.next();
-		System.out.println("What class is his second peroid?");
+		System.out.println("What class is the students second peroid?");
 		Scanner userInput5 = new Scanner(System.in);
 		String periodTwo= userInput5.next();
 		System.out.println("What grade does the student have in " + periodTwo + "?");
 		Scanner userInput6 = new Scanner(System.in);
 		String periodTwoGrade = userInput6.next();
-		System.out.println("What class is his third peroid?");
+		System.out.println("What class is the students third peroid?");
 		Scanner userInput7 = new Scanner(System.in);
 		String periodThree = userInput7.next();
 		System.out.println("What grade does the student have in " + periodThree + "?");
 		Scanner userInput8 = new Scanner(System.in);
 		String periodThreeGrade = userInput8.next();
 		DataOfStudent.studentInformation.add(new Student(firstName, lastName, periodOne, periodOneGrade, periodTwo, periodTwoGrade, periodThree, periodThreeGrade, 0.0));
+		
+		System.out.println("This is the list of " + firstName + "'s classes.");
+			System.out.println(DataOfStudent.studentInformation.get(DataOfStudent.studentInformation.size()-1)
+					.getFirstName()
+					+ " "
+					+ DataOfStudent.studentInformation.get(DataOfStudent.studentInformation.size()-1).getLastName()
+					+ "  "
+					+ DataOfStudent.studentInformation.get(DataOfStudent.studentInformation.size()-1).getPeriodOne()
+					+ " "
+					+ DataOfStudent.studentInformation.get(DataOfStudent.studentInformation.size()-1)
+							.getPeriodOneGrade()
+					+ "  "
+					+ DataOfStudent.studentInformation.get(DataOfStudent.studentInformation.size()-1).getPeriodTwo()
+					+ " "
+					+ DataOfStudent.studentInformation.get(DataOfStudent.studentInformation.size()-1)
+							.getPeriodTwoGrade()
+					+ "  "
+					+ DataOfStudent.studentInformation.get(DataOfStudent.studentInformation.size()-1).getPeriodThree()
+					+ " "
+					+ DataOfStudent.studentInformation.get(DataOfStudent.studentInformation.size()-1)
+							.getPeriodThreeGrade());
+			
 		}
 	//asdfasdf
 
