@@ -7,7 +7,7 @@ public class SetStudent {
 
 	public static void setStudentMenu()
 		{
-		System.out.println("Add or Delete a Student");
+		System.out.println("\n" + "Add or Delete a Student");
 		System.out.println("\t 1)Add a student");
 		System.out.println("\t 2)Delete a student");
 		Scanner userInput = new Scanner(System.in);
@@ -22,14 +22,14 @@ public class SetStudent {
 			}
 		else
 			{
-			System.out.println("Pleae input the number ex. 1 or 2");
+			System.out.println();
 			}
 		
 		}
 	
 	public static void deleteStudent()
 		{
-		System.out.println("Which student would you like to delete?");
+		System.out.println("\n" + "Which student would you like to delete?");
 		Scanner userInput = new Scanner(System.in);
 		
 		Collections
@@ -91,33 +91,33 @@ public class SetStudent {
 			
 	public static void addStudent()
 		{
-		System.out.println("What is the first name of the student?");
+		System.out.println("\n" + "What is the first name of the student?");
 		Scanner userInput = new Scanner(System.in);
 		String firstName = userInput.next();
-		System.out.println("what is the last name of the student?");
+		System.out.println("\n" +"What is the last name of the student?");
 		Scanner userInput2 = new Scanner(System.in);
 		String lastName = userInput2.next();
-		System.out.println("What class is the students first peroid?");
+		System.out.println("\n" + "What class is the students first peroid?");
 		Scanner userInput3 = new Scanner(System.in);
 		String periodOne= userInput3.next();
-		System.out.println("What grade does the student have in " + periodOne + "?");
+		System.out.println("\n" + "What grade does the student have in " + periodOne + "?");
 		Scanner userInput4 = new Scanner(System.in);
 		String periodOneGrade = userInput4.next();
-		System.out.println("What class is the students second peroid?");
+		System.out.println("\n" + "What class is the students second peroid?");
 		Scanner userInput5 = new Scanner(System.in);
 		String periodTwo= userInput5.next();
-		System.out.println("What grade does the student have in " + periodTwo + "?");
+		System.out.println("\n" + "What grade does the student have in " + periodTwo + "?");
 		Scanner userInput6 = new Scanner(System.in);
 		String periodTwoGrade = userInput6.next();
-		System.out.println("What class is the students third peroid?");
+		System.out.println("\n" + "What class is the students third peroid?");
 		Scanner userInput7 = new Scanner(System.in);
 		String periodThree = userInput7.next();
-		System.out.println("What grade does the student have in " + periodThree + "?");
+		System.out.println("\n" + "What grade does the student have in " + periodThree + "?");
 		Scanner userInput8 = new Scanner(System.in);
 		String periodThreeGrade = userInput8.next();
 		DataOfStudent.studentInformation.add(new Student(firstName, lastName, periodOne, periodOneGrade, periodTwo, periodTwoGrade, periodThree, periodThreeGrade, 0.0));
 		
-		System.out.println("This is the list of " + firstName + "'s classes.");
+		System.out.println("\n" + "This is the list of " + firstName + "'s classes." + "\n");
 			System.out.println(DataOfStudent.studentInformation.get(DataOfStudent.studentInformation.size()-1)
 					.getFirstName()
 					+ " "
