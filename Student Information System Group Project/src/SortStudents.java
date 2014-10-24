@@ -26,10 +26,10 @@ public class SortStudents
 		if (sortTheStudents == 3)
 			{
 			sortByClass();
-			} else
+			} 
+		else
 			{
-			System.out
-					.println("Please input an accepted character ex 1,2 or 3. ");
+			System.out.println("Please input an accepted character ex 1,2 or 3. ");
 			}
 		}
 
@@ -40,7 +40,34 @@ public class SortStudents
 
 	public static void sortByGPA()
 		{
+		CalculateGPA.GPA(); 
 		Collections.sort(DataOfStudent.studentInformation, new GPASorter());
+		
+			for(int i = 0; i < DataOfStudent.studentInformation.size(); i++) 
+			{
+				System.out.println("\n" + "Here are the classes and scores of "
+						+ DataOfStudent.studentInformation.get(i).getFirstName()
+						+ " "
+						+ DataOfStudent.studentInformation.get(i).getLastName() + ".");
+				System.out.println("\n"
+						+ DataOfStudent.studentInformation.get(i).getPeriodOne()
+						+ " "
+						+ DataOfStudent.studentInformation.get(i)
+								.getPeriodOneGrade()
+						+ " "
+						+ DataOfStudent.studentInformation.get(i).getPeriodTwo()
+						+ " "
+						+ DataOfStudent.studentInformation.get(i)
+								.getPeriodTwoGrade()
+						+ " "
+						+ DataOfStudent.studentInformation.get(i)
+								.getPeriodThree()
+						+ " "
+						+ DataOfStudent.studentInformation.get(i)
+								.getPeriodThreeGrade()
+						+ " " + DataOfStudent.studentInformation.get(i)
+								.getGPA()); 
+			}
 		}
 
 	public static void sortByClass()
@@ -78,5 +105,4 @@ public class SortStudents
 							.getPeriodThreeGrade());
 			}
 		}
-	// asdfasdf
 	}
