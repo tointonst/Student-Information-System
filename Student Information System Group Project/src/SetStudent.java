@@ -117,5 +117,6 @@ public class SetStudent {
 		String periodThreeGrade = userInput8.next();
 		DataOfStudent.studentInformation.add(new Student(firstName, lastName, periodOne, periodOneGrade, periodTwo, periodTwoGrade, periodThree, periodThreeGrade, 0.0));
 		}
+	//asdfasdf
 
 }
