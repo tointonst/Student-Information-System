@@ -205,8 +205,8 @@ public class ChangeGradesAndClasses
 			DataOfStudent.studentInformation.get(harris).setPeriodThree(c);
 			System.out.println("\n" + "Period One "
 					+ DataOfStudent.studentInformation.get(harris)
-							.getPeriodOne() + " Period Two " + DataOfStudent.studentInformation.get(harris)
-							.getPeriodTwo() +  " Period Three " + DataOfStudent.studentInformation.get(harris)
+							.getPeriodOne() + "\n" + "Period Two " + DataOfStudent.studentInformation.get(harris)
+							.getPeriodTwo() +  "\n" + "Period Three " + DataOfStudent.studentInformation.get(harris)
 							.getPeriodThree()); 
 			
 
